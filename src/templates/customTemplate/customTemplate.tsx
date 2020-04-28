@@ -4,6 +4,13 @@ import React, { FunctionComponent } from "react";
 import { PrintWatermark } from "../../core/PrintWatermark";
 import { CustomTemplateCertificate } from "../sample";
 
+// const style = css`
+//   position: relative;
+//   pre {
+//     background-color: lightgray;
+//   }
+// `;
+
 const containerStyle = css`
   background-color: #324353;
   color: #ffffff;
@@ -24,5 +31,10 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
       <div>awarded to</div>
       <h2>{document.recipient.name}</h2>
     </div>
+    // <div css={style} className={className} id="custom-template">
+    //   <PrintWatermark />
+    //   <h1>{document?.foo?.title ?? "Default title"}</h1>
+    //   <pre>{JSON.stringify(document, null, 2)}</pre>
+    // </div>
   );
 };
